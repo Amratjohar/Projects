@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+   <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    
+    <header>
+           <a href="#" class="logo">Tours.co</a>
+        </nav>
+      </header>
+
+    <div class="hero">
+        <div class="form-box"> 
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Log-In</button>
+                <button type="button" class="toggle-btn" onclick="register()">Register</button>
+            </div>
+       
+        <form class="inputgroup" id="log">
+            <input type="text" name="username" class="inputf" placeholder="Enter Username" >
+            <input type="password" name="password" class="inputf" placeholder="Enter Password" >
+            <input type="checkbox" name="" class="check-box" ><span>Remember Password</span>
+
+            
+               <button type="submit" class="sub-btn"><a href="./index.html">Log-In</a></button>
+          
+        </form> 
+
+        <form class="inputgroup1" id="reg">
+            <input type="text" name="username" class="inputf1" placeholder="Enter Username" required>
+            <input type="email" name="email" class="inputf1" placeholder="Enter Email" required>
+            <input type="password" name="password" class="inputf1" placeholder="Enter Password" required>
+            <input type="checkbox" name="" class="check-box" required><span>I agree to terms and conditions</span>
+
+            <button type="submit" class="sub-btn1">Register</button>
+        </form> 
+        </div>
+    </div>
+
+    <script>
+        var x= document.getElementById("log");
+        var y= document.getElementById("reg");
+        var z= document.getElementById("btn");
+
+    function register(){
+        x.style.left="-480px";
+        y.style.left="50px";
+        z.style.left="110px";
+    }
+
+    function login(){
+        x.style.left="50px";
+        y.style.left="450px";
+        z.style.left="0px";
+    }
+    </script>
+</body>
+</html>

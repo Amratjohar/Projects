@@ -1,0 +1,219 @@
+:root {
+  --blue: #226be0;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 0rem 3%;
+  background: var(--blue);
+  flex-direction: row;
+}
+
+header .logo {
+  font-size: 3rem;
+  color: white;
+  text-decoration: none;
+  margin: 0 auto;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+header .logo i {
+  padding: 0 0.5rem;
+}
+
+header .navbar ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+
+header .navbar ul li a {
+  font-size: 2rem;
+  margin-left: 2rem;
+  color: #fff;
+  position: relative;
+  text-decoration: none;
+}
+
+header .navbar ul li a::before {
+  content: "";
+  position: absolute;
+  bottom: -0.5rem;
+  right: 0;
+  width: 0%;
+  height: 0.2rem;
+  background: #fff;
+  transition: 0.2s linear;
+}
+
+header .navbar ul li a.active::before,
+header .navbar ul li a:hover::before {
+  left: 0;
+  width: 100%;
+}
+
+header #menu {
+  font-size: 3rem;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+
+.hero {
+  height: 100vh;
+  width: 100%;
+  background-color: #38ebd0;
+  background-size: cover;
+  position: absolute;
+}
+
+.form-box {
+  width: 370px;
+  height: 400px;
+  position: relative;
+  padding: 6px;
+  margin: 6% auto;
+  background: #fff;
+  overflow: hidden;
+  border-radius: 40px;
+}
+
+.button-box {
+  width: 230px;
+  margin: 30px auto;
+  position: relative;
+  box-shadow: 0 0 20px 9px #ff61241f;
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.toggle-btn {
+  padding: 10px 30px;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  outline: none;
+  position: relative;
+}
+
+#btn {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 120px;
+  height: 100%;
+  border-radius: 30px;
+  background: linear-gradient(to right, #ff105f, #ffad06);
+  transition: all 0.5s;
+}
+
+.inputgroup {
+  top: 110px;
+  position: absolute;
+  width: 280px;
+  transition: 0.5s;
+  border-top-left-radius: 30px;
+}
+
+.inputgroup1 {
+  top: 100px;
+  position: absolute;
+  width: 280px;
+  transition: 0.5s;
+  border-top-left-radius: 30px;
+}
+
+.inputf {
+  width: 100%;
+  padding: 5px 0;
+  margin: 16px 0px;
+  border-left: 0;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 1px solid #999;
+  outline: none;
+  background: transparent;
+}
+
+.inputf1 {
+  width: 100%;
+  padding: 3px 0;
+  margin: 10px 0px;
+  border-left: 0;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 1px solid #999;
+  outline: none;
+  background: transparent;
+}
+
+.sub-btn {
+  width: 85%;
+  padding: 13px 30px;
+  cursor: pointer;
+  display: block;
+  border-radius: 30px;
+  margin: auto;
+  background: linear-gradient(to right, #ff105f, #ffad06);
+  border: 0;
+  outline: none;
+  position: relative;
+  top: 13px;
+}
+
+.sub-btn1 {
+  width: 85%;
+  padding: 13px 30px;
+  cursor: pointer;
+  display: block;
+  border-radius: 30px;
+  margin: auto;
+  background: linear-gradient(to right, #ff105f, #ffad06);
+  border: 0;
+  outline: none;
+  position: relative;
+  top: 13px;
+}
+
+.check-box {
+  margin: 15px 7px 24px 0;
+}
+
+span {
+  color: #777;
+  font-size: 12px;
+  bottom: 3px;
+  left: 8px;
+  position: relative;
+}
+
+#log {
+  left: 50px;
+}
+
+#reg {
+  left: 450px;
+}
+
+.invalid-feedback {
+  margin-left: 0px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.justify-content-end {
+  margin-right: 7%;
+}

@@ -1,0 +1,492 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+}
+
+html {
+  /* font-size: 62.5%; */
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* Navbar */
+.container {
+  position: relative;
+  padding: 0;
+}
+
+.head2 {
+  border: 0;
+  border-radius: 0;
+  margin-bottom: 0;
+  box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.7);
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+/* .navbar {
+  position: fixed;
+  left: 0;
+  right: 0;
+} */
+.navbar .navbar-fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+.logo {
+  width: 5rem;
+  height: 4rem;
+  /* border-radius: 50%; */
+}
+
+a {
+  color: black;
+}
+
+.nav-item .nav-link {
+  font-size: 18px;
+  color: black;
+  font-weight: 700;
+}
+
+.nav-item .nav-link:hover {
+  color: crimson;
+  text-transform: uppercase;
+}
+
+.bg {
+  background-color: bisque;
+  padding: 0px;
+}
+
+.navbar-toggler {
+  padding: 2px 7px;
+  margin: 0px 0px;
+  font-size: 25px;
+  border: 2px solid black;
+  line-height: 0.7;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.nav-item {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+/* Section-1 */
+
+#main-slider .item {
+  height: 577px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* margin-top: 0; */
+}
+
+.parallax1 {
+  /* background-attachment: fixed; */
+  background-image: url(images/img1.jpg);
+  min-height: 500px;
+}
+
+/* Section-2 */
+.img3 {
+  width: 100%;
+  border-radius: 17px;
+}
+
+h4 {
+  font-size: 18px;
+  font-family: monospace;
+}
+
+.h2-ultra {
+  text-align: left;
+  color: #242424;
+  margin-bottom: 0px;
+  font-family: "Sacramento";
+  font-size: 50px;
+}
+
+.btn-warning {
+  color: #fff;
+  background-color: #6e5e31;
+  border-color: #eea236;
+}
+
+/* Section-3 */
+.col-md-5 {
+  width: 41.66666667%;
+  padding-top: 0px;
+  float: left;
+}
+
+.col-md-6 {
+  width: 50%;
+}
+
+.col-md-7 {
+  width: 58.33333333%;
+  margin-top: 0px;
+}
+
+.section3 {
+  width: 970px;
+}
+
+.top-left {
+  position: absolute;
+  top: 30px;
+  /* left: 20px; */
+  background: #133a1f;
+  border-radius: 10px;
+  padding: 3px 13px;
+  color: #fff;
+}
+
+.h2-sect3 {
+  text-align: left;
+  color: #242424;
+  margin-bottom: 0px;
+  font-family: "Sacramento";
+  font-size: 50px;
+}
+
+.ame {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.sect3 {
+  display: flex;
+}
+
+.w-100 {
+  width: 100%!important;
+  height: 30rem;
+}
+
+/* Project Gallery */
+.headertext {
+  text-align: center;
+  font-weight: 800;
+  color: #000;
+  text-transform: uppercase;
+  font-size: 27px;
+  color: #133a1f;
+  margin-bottom: 40px;
+}
+
+.carousel-item h5 {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: black;
+  text-transform: uppercase;
+  background: beige;
+}
+
+/* Floor Plan */
+.headertext p {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  background: #1d1f2c;
+  padding: 7px;
+  border-radius: 4px;
+}
+
+.centered {
+  position: absolute;
+  /* top: 50%; */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #000;
+  /* margin-bottom: 15px; */
+}
+
+/* Location */
+.loc {
+  display: flex;
+  align-items: flex-start;
+  padding-top: 12px;
+}
+
+.loc-img {
+  width: 15%;
+}
+
+.col-md-3 {
+  width: 25%;
+}
+
+.loc-text {
+  font-weight: 600;
+  font-size: 21px;
+}
+
+.loc-para {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.col-md-12 {
+  display: flex;
+}
+
+/* Footer */
+footer{
+  display: block;
+}
+#footer {
+  /* position: absolute; */
+  padding-top: 30px;
+  padding-bottom: 50px;
+  color: brown;
+  /* background: #2e2e2e; */
+}
+
+#sec-about .img1{
+  width: 10%;
+  margin: 20px auto;
+}
+
+.deve-text {
+  color: #fff;
+  font-size: 25px;
+  font-weight: 600;
+  font-family: 'Philosopher-Regular';
+}
+
+.enquire-now.fade {
+  opacity: 1;
+  display: block;
+  top: inherit;
+  overflow: inherit;
+}
+
+.enquire-now {
+  background: beige;
+  bottom: 0px;
+  width: 100%;
+  left: 0px;
+  text-align: center;
+  padding: 13px 0 7px 0px;
+  /* border-top: 3px solid #ff0000; */
+  box-shadow: 0 0 3px 1px rgb(0 0 0 / 70%);
+}
+
+.model {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1050;
+  /* display: none; */
+  overflow: hidden;
+  /* -webkit-overflow-scrolling: touch; */
+  outline: 0;
+}
+
+.foot-container{
+  position: relative;
+}
+
+.wrap {
+  width: 1330px;
+  max-width: 100%;
+}
+
+.enquire-head h2 {
+  color: #ffffff;
+  font-size: 28px;
+  text-transform: uppercase;
+  margin: 0;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  padding-top: 7px;
+}
+
+.fade {
+  opacity: 1;
+  /* -webkit-transition: opacity .15s linear;
+  -o-transition: opacity .15s linear; */
+  transition: opacity .15s linear;
+}
+
+
+
+
+
+
+
+
+
+/* Responsiveness */
+@media (min-width: 767px) and (max-width: 1199px) {
+  .hidden-md {
+    display: none !important;
+  }
+}
+
+@media (max-width: 992px) {
+
+  .navbar-expand-md {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    position: fixed;
+    left: 0;
+    right: 0;
+}
+
+  .col-md-12 {
+    display: block;
+  }
+
+  .col-md-3 {
+    width: 55%;
+  }
+
+  .loc-img {
+    width: 35%;
+  }
+
+  .loc-text {
+    font-weight: 600;
+    font-size: 21px;
+  }
+
+  .loc-sub-sec {
+    width: 100%;
+  }
+
+  #sec-about .img1{
+    width: 15%;
+    margin: 10px auto;
+  }
+
+  .row .col-md-3 {
+    flex: 0 0 auto;
+    width: 25%;
+    margin: 0 auto;
+}
+}
+
+@media (max-width: 768px) {
+  #main-slider .item {
+    background-size: contain;
+    height: 435px;
+  }
+
+  .parallax1 {
+    /* background-image: url(images/img2.jpg); */
+    min-height: 415px;
+  }
+
+  .hidden-xs {
+    display: none !important;
+  }
+
+  .hidden-md {
+    display: none !important;
+  }
+  /* 
+  .top-left1 {
+    position: absolute;
+    top: 490px;
+    left: 12px;
+    background: #133a1f;
+    border-radius: 10px;
+    padding: 3px 13px;
+    color: #fff;
+  } */
+
+  .carousel-item h5 {
+    font-size: 10px;
+    font-weight: 800;
+    color: black;
+    text-transform: uppercase;
+    background: beige;
+    margin-bottom: 0;
+  }
+
+  .col-md-3 {
+    width: 55%;
+  }
+
+  .row .col-md-3 {
+    flex: 0 0 auto;
+    width: 25%;
+    margin: 0 auto;
+}
+}
+
+@media (max-width: 576px) {
+  #main-slider .item {
+    background-size: 100%;
+    display: flex;
+    width: 100%;
+    background-position: top;
+  }
+  .parallax1 {
+    /* background-attachment: fixed; */
+    background-image: url(images/img2.jpg);
+    min-height: 580px;
+  }
+
+  .hidden-xs {
+    display: none !important;
+  }
+  /* 
+  .top-left1 {
+    position: absolute;
+    top: 488px;
+    left: 12px;
+    background: #133a1f;
+    border-radius: 10px;
+    padding: 3px 13px;
+    color: #fff;
+  } */
+}
+
+@media (max-width: 430px) {
+  #main-slider .item {
+    background-size: 100%;
+    display: flex;
+    width: 100%;
+    background-position: top;
+  }
+  .parallax1 {
+    /* background-attachment: fixed; */
+    background-size: contain;
+    background-image: url(images/img2.jpg);
+    min-height: 560px;
+  }
+
+  .hidden-xs {
+    display: none !important;
+  }
+  /* 
+  .top-left1 {
+    position: absolute;
+    top: 599px;
+    left: 12px;
+    background: #133a1f;
+    border-radius: 10px;
+    padding: 3px 13px;
+    color: #fff;
+  } */
+}

@@ -1,0 +1,268 @@
+:root {
+  --blue: #226be0;
+  --primary-color: #669ccb;
+  --primary-color-dark: #7124b9;
+  --secondary-color: #e8f1fa;
+  --text-dark: #282d31;
+  --text-light: #767268;
+  --extra-light: #d2239e;
+  width: 100%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  transition: all 0.2s linear;
+  text-transform: capitalize;
+}
+
+/* *::selection {
+  background: var(--blue);
+  overflow-x: hidden;
+} */
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 0rem 3%;
+  background: var(--blue);
+  flex-direction: row;
+}
+
+header .logo {
+  font-size: 2rem;
+  color: white;
+  text-decoration: none;
+}
+
+.img-fluid {
+  width: 100%;
+  /* height: 56rem; */
+}
+
+
+section {
+    height: 100%;
+    
+  }
+
+.section__container {
+    background-image: linear-gradient(
+        rgba(45, 92, 132, 0.5),
+        rgba(45, 92, 132, 0.5)
+      ),
+      url("images/bg-1.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5rem 1rem;
+    /* max-width: var(--max-width); */
+    margin: auto;
+  height: 56rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  color: var(--extra-light);
+}
+
+.header__content h1 {
+  font-size: 5rem;
+  font-weight: 800;
+  line-height: 5rem;
+}
+
+.header__content p {
+  text-align: center;
+  font-weight: 700;
+  font-size: 13px;
+  margin: 0 15rem;
+}
+
+.header__content button {
+  padding: 1rem 3rem;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--primary-color);
+  color: var(--extra-light);
+  font-size: 1.6rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.header__content button:hover {
+  background-color: var(--primary-color-dark);
+}
+
+header .navbar ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+
+header .navbar ul li a {
+  font-size: 2rem;
+  margin-left: 2rem;
+  color: #fff;
+  position: relative;
+  text-decoration: none;
+}
+
+header .navbar ul li a::before {
+  content: "";
+  position: absolute;
+  bottom: -0.5rem;
+  right: 0;
+  width: 0%;
+  height: 0.2rem;
+  background: #fff;
+  transition: 0.2s linear;
+}
+
+header .navbar ul li a.active::before,
+header .navbar ul li a:hover::before {
+  left: 0;
+  width: 100%;
+}
+
+header #menu {
+  font-size: 3rem;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+
+.carousel-item {
+  height: 46rem;
+  background: #777;
+  color: white;
+  position: relative;
+}
+.container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-bottom: 50px;
+}
+
+.w-100 {
+  width: 100% !important;
+  height: 100%;
+  margin: 0px auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+h5 {
+  font-size: 1.5rem;
+  color: black;
+  background: darkseagreen;
+  margin: 0 35%;
+  border-radius: 15px;
+}
+
+#contact-popup {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 350px; /* Adjust width as needed */
+  background-color: #b22f2f;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+}
+
+#contact-popup.open {
+  opacity: 0.9;
+  visibility: visible;
+  border-radius: 20px;
+}
+
+#contact-popup h2 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#contact-popup p {
+  /* margin-bottom: 10px; */
+  text-align: center;
+  font-weight: 800;
+  font-size: 12px;
+}
+
+p {
+  margin: 0;
+}
+
+#close-popup {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 10px 20px;
+  background-color: #de183c;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.popup-content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.hidden {
+  display: none;
+}
+
+button[type="submit"] {
+  margin-left: 34%;
+}
+
+.submit {
+  margin-top: 11px;
+  padding: 5px;
+  width: 10rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+}
+
+input[type="email"],
+input[type="number"] {
+  margin-bottom: 5px;
+}
