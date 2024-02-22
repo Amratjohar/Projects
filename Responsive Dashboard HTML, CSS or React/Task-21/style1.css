@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*----------- Navbar------------ */
+nav {
+  display: flex;
+  flex-direction: column;
+}
+a.navbar-brand.head {
+  font-weight: 700;
+  color: green;
+}
+.btn1 {
+  background: orangered;
+  border-radius: 30px;
+  padding: 0 5px;
+}
+
+a.btn2 {
+  background: blue;
+  border-radius: 30px;
+  padding: 0 2px;
+  margin-top: 0.5rem;
+}
+
+.nav-item span,
+.icon-container {
+  margin-top: 0.5rem;
+  font-size: 15px;
+  justify-content: center;
+  display: flex;
+  margin-left: 10px;
+}
+.icon-container i {
+  margin: 4px 0.5rem;
+  border: none;
+  color: green;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: black;
+}
+
+/*----------- container1------------ */
+.container1 {
+  display: block;
+  width: 95%;
+  height: auto;
+  margin: 7rem auto;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.btn3 {
+  background: blue;
+  color: white;
+  width: 5%;
+  margin: 5px;
+  display: flex;
+  justify-content: end;
+}
+
+.htext1 {
+  display: flex;
+}
+
+.stext {
+  font-weight: 700;
+  color: blue;
+}
+
+.line {
+  border: 2px solid black;
+  opacity: 0.5;
+}
+
+.stext1 {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+}
+
+/*--------------- Container2-------------------- */
+.container2 {
+  /* display: block; */
+  width: 98%;
+  height: auto;
+  margin: 1rem auto;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+label {
+  display: inline-block;
+  font-size: 15px;
+}
+
+.forms {
+  padding: 25px;
+}
+
+.form-select {
+  display: block;
+  width: 90%;
+  padding: 0 1.1rem 1px 0.4rem;
+}
+
+.headings {
+  background-color: aquamarine;
+  color: blue;
+  opacity: 0.6;
+}
+
+.btn4{
+    background: tomato;
+    padding: 0px;
+    width: 50%;
+    border-radius: 10px;
+}
+
+.details {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  row-gap: 15px;
+  column-gap: 15px;
+}
+
+.f1 {
+  color: blue;
+}
+
+/*--------------- Responsiveness-------------------- */
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+    justify-content: flex-end;
+  }
+}

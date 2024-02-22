@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+   
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: aquamarine; /* Light grey background color */
+            color: #121212; /* Dark grey text color */
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: #007bff; /* Blue header color */
+            margin-top: 20px;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            width: 300px;
+            border: 1px solid #eee8e8; /* Light grey border */
+            
+           
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #5f2206; /* Blue button color */
+            color: #fff; /* White text color */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #121314; /* Darker blue on hover */
+        }
+
+        #todo-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        #todo-list li {
+            background-color: #fff; /* White background color for list items */
+            padding: 10px;
+            margin-bottom: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc; /* Light grey border */
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>To-Do List</h1>
+    <input type="text" id="todo-input" placeholder="Enter your to-do item">
+    <button onclick="addItem()">Add Item</button>
+    <ul id="todo-list">
+        <!-- List items will be added dynamically -->
+    </ul>
+    <script src="script.js"></script>
+</body>
+</html>
