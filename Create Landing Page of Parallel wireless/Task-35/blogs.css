@@ -1,0 +1,19 @@
+.blog-button {
+    background-color: orangered;
+    color: white;
+    font-size: medium;
+    font-weight: bold;
+    transition: all ease-in-out 0.3s;
+
+}
+
+.blog-button:hover {
+    background-color: white;
+    color: orangered;
+}
+.col1{
+    width: 60%;
+}
+.col2{
+    width: 40%;
+}

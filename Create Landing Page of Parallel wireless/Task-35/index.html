@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallel Wireless</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">    
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <!-- <header>
+        <a href="" class="logo">
+            <img src="images/logo.png" alt="">
+        </a>
+    
+        <input type="checkbox" id="menu-bar">
+        <label for="menu-bar"><i class="fa-solid fa-bars"></i></label>
+    
+        <nav class="navbar">
+            <ul>
+                <li class=""><a href="./solution.html">Solutions</a>
+                    <ul class="">
+                        <li><a href="./solutions-urban.html">Urban</a></li>
+                        <li><a href="./rural.html">Rural</a></li>
+                        <li><a href="./privateLTE.html">Private LTE</a></li>
+                    </ul>  
+                </li>
+                <li class=""><a href="#">Products & Technologies</a>
+                    <ul class="">
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                    </ul>
+                </li>
+                <li class=""><a href="#">Customers</a></li>
+                <li class=""><a href="#">Company</a>
+                    <ul class="">
+                        <li><a href="#">Who We Are?</a>
+                            <ul class="">
+                                <li><a href="#">Mission and Vision</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">News</a>
+                            <ul class="">
+                                <li><a href="#">Press Releases</a></li>
+                                <li><a href="#">News Coverage</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Leadership</a></li>
+                        <li><a href="#">Awards</a></li>
+                        <li><a href="#">Contact</a>
+                            <ul class="">
+                                <li><a href="#">Support</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Partners</a></li>
+                        <li><a href="#">Legal</a></li>
+                    </ul>
+                </li>
+                <li class=""><a href="#">Careers</a></li>
+                <li class=""><a href="#">Resources</a>
+                    <ul class="">
+                        <li><a href="#">White Papers</a></li>
+                        <li><a href="#">Solution Overviews</a></li>
+                        <li><a href="#">Videos</a></li>
+                        <li><a href="#">Blogs</a></li>
+                        <li><a href="#">Case Studies</a></li>
+                        <li><a href="#">Webinars</a></li>
+                        <li><a href="#">OpenRAN</a></li>
+                    </ul>
+                </li> 
+                <li class=""><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li> 
+                <li class=""><a href="#"><button class="btn1">Contact Us</button> </a></li>
+            </ul>
+        </nav>
+    </header> -->
+    <nav class="px-20 py-8 shadow-md ">
+        <img src="https://www.parallelwireless.com/wp-content/uploads/parallel_wireless.svg" alt="Logo"
+            class="logo mx-4">
+        <ul class="space-x-4 font-bold  items-center ">
+            <li class=" h-8 flex items-center justify-between">
+                <div class="dropdown">
+                    <a href="./solution.html">Solutions</a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="./solutions-urban.html" class="flex justify-start no-underline ">Urban</a>
+                        </li>
+                        <li>
+                            <a href="./rural.html" class="flex justify-start no-underline ">Rural</a>
+                        </li>
+                        <li>
+                            <a href="./privateLTE.html" class="flex justify-start no-underline ">Private LTE</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="h-8 flex items-center justify-between">
+                <div class="dropdown-mega">
+                    <a href="#">Product & Terminologies</a>
+                    <ul class="dropdown-mega-menu">
+                        <div class="product-drop   w-full h-full">
+                            <!-- 2 columns and image -->
+                            <div class="grid grid-cols-2 gap-48 mx-8 py-8">
+                                <div class="grid grid-cols-3 ">
+                                    <div class="border-r border-solid w-44">
+                                        <h2 class="text-2xl font-bold ">
+                                            <a href="#" class="text-black hover:text-orange-500 hover:underline">
+                                                Technologies
+                                            </a>
+                                        </h2>
+                                        <ul class="block drop-list text-md  mt-4">
+                                            <li><a href="#">5G</a></li>
+                                            <li><a href="#">4G</a></li>
+                                            <li><a href="#">3G</a></li>
+                                            <li><a href="#">2G</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="product-container">
+                                        <h2 class="text-2xl w-full font-bold mb-4 ">
+                                            <a href="#" class="text-black hover:text-orange-500 hover:underline">
+                                                Products
+                                            </a>
+                                        </h2>
+                                        <div class="grid grid-cols-3 gap-48">
+                                            <div class="w-44">
+                                                <h3 class="font-bold mb-2  ">
+                                                    <a href="#"
+                                                        class="text-black hover:text-orange-500 hover:underline">
+                                                        ACCESS: OpenRAN
+                                                    </a>
+                                                </h3>
+                                                <ul class="block drop-list ">
+                                                    <li><a href="#">Software-defined Open vRAN</a></li>
+                                                    <li><a href="#">5G OpenRAN</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="w-44">
+                                                <h3 class="font-bold  mb-2 "><a href="#"
+                                                        class="text-black hover:text-orange-500 hover:underline">Network
+                                                        Software</a></h3>
+                                                <ul class="block drop-list  ">
+                                                    <li>
+                                                        <div class="sub-drop">
+                                                            <a href="#">Interoperable <i
+                                                                    class="fas fa-chevron-right text-sm"></i></a>
+                                                            <ul class="sub-drop-menu ">
+                                                                <li>Open RAN Controller</li>
+                                                            </ul>
+
+                                                        </div>
+                                                    </li>
+                                                    <li><a href="#">Unified</a></li>
+                                                    <li><a href="#">Cloud-native</a></li>
+                                                    <li><a href="#">End-to-end</a></li>
+                                                    <li><a href="#">Performance</a></li>
+                                                    <li>
+                                                        <div class="sub-drop">
+                                                            <a href="#">Multi-tenant and Sharing <i
+                                                                    class="fas fa-chevron-right text-sm"></i></a>
+                                                            <ul class="sub-drop-menu ">
+                                                                <li>MOCN</li>
+                                                                <li>MORAN</li>
+                                                            </ul>
+                                                        </div>
+
+                                                    </li>
+                                                    <li><a href="#">Secure</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="w-44">
+                                                <h3 class="font-bold  mb-2 "><a href="#"
+                                                        class="text-black hover:text-orange-500 hover:underline">Network
+                                                        Intelligence</a></h3>
+                                                <ul class="block drop-list ">
+                                                    <li><a href="#">Analytics</a></li>
+                                                    <li><a href="#">Real-Time ALL G SON</a></li>
+                                                    <li><a href="#">Network Orchestrator</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="product-drop-img w-full h-full mt-6">
+                                    <p class=" m-8 text-4xl text-white">Visit our resources page to download collateral,
+                                        watch customer
+                                        testimonial, or get a spec sheet.</p>
+                                    <a href="#" class="font-bold text-white mx-8 text-xl hover:underline">RESOURCES <i
+                                            class="fas fa-arrow-right text-xl font-bold"></i></a>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </ul>
+                </div>
+            </li>
+            <li class="h-8 flex items-center justify-between"><a href="./customer.html">Customers</a></li>
+            <li class="active h-8 flex items-center justify-between">
+                <div class="dropdown">
+                    <a href="./company.html">Company</a>
+                    <ul class="dropdown-menu">
+                        <li class="h-8 w-full flex items-center justify-between">
+                            <div class="sub-dropdown">
+                                <a href="./who_we_are.html" class="flex justify-start no-underline">Who we are <i
+                                        class="fas fa-chevron-right ml-16 flex items-center"></i></a>
+                                <ul class="sub-dropdown-menu">
+                                    <li class="h-8 flex items-center justify-between"><a href="#">Mission and Vision</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </li>
+                        <li class="h-8 flex items-center justify-between">
+                            <div class="sub-dropdown">
+                                <a href="./news.html" class="flex justify-start no-underline">News <i
+                                        class="fas fa-chevron-right ml-28 flex items-center "></i></a>
+                                <ul class="sub-dropdown-menu">
+                                    <li class="h-8 flex items-center justify-between"><a href="#">Press Releases</a>
+                                    </li>
+                                    <li class="h-8 flex items-center justify-between"><a href="#">News Coverage</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="h-8 flex items-center justify-between"><a href="./leadership.html"
+                                class="flex justify-start no-underline">Leadership</a></li>
+                        <li class="h-8 flex items-center justify-between"><a href="./awards.html"
+                                class="flex justify-start no-underline">Awards</a></li>
+                        <li class="h-8 flex items-center justify-between">
+                            <div class="sub-dropdown">
+                                <a href="./contact.html" class="flex justify-start no-underline">Contact <i
+                                        class="fas fa-chevron-right ml-24 flex items-center "></i></a>
+                                <ul class="sub-dropdown-menu">
+                                    <li><a href="#">Support</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="h-8 flex items-center justify-between"><a href="./partner.html"
+                                class="flex justify-start no-underline">Partners</a></li>
+                        <li class="h-8 flex items-center justify-between"><a href="./legal.html"
+                                class="flex justify-start no-underline">Legal</a></li>
+
+                    </ul>
+                </div>
+            </li>
+            <li class="h-8 flex items-center justify-between"><a href="./careers.html">Careers</a></li>
+            <li class="h-8 flex items-center justify-between"> <div class="dropdown">
+                <a href="./resources.html">Resources</a>
+                <ul class="dropdown-menu">
+                    <li><a href="./white-papers.html">White Papers</a></li>
+                    <li><a href="./Solution Overviews.html">Solution Overviews</a></li>
+                    <li><a href="https://www.youtube.com/user/ParallelWireless/about">Videos</a></li>
+                    <li><a href="./blogs.html">Blogs</a></li>
+                    <li><a href="./case.html">Case Studies</a></li>
+                    <li><a href="./webinars.html">Webinars</a></li>
+                    <li><a href="./openran.html">OpenRAN</a></li>
+                </ul>
+            </div></li>
+            <li class="h-8 flex items-center justify-between"><i class="fas fa-search"></i></li>
+            <li class="h-8 flex items-center justify-between"><a href="./contactUS.html"><button
+                        class="border border-red-600 border-solid rounded-lg p-2 px-4">CONTACT
+                        US</button></a></li>
+        </ul>
+    </nav>
+
+    <main class="main1">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/website-banner-3.jpg" class="d-block w-100" alt="">
+                    <div class="cont1">
+                        <div class="box">
+                            <div class="title">
+                                <span class="block"></span>
+                                <h1>Pioneering Unprecedented Open RAN Hardware-Agnostic Solutions<span></span></h1>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn2">Learn More >></button>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/website-banner-3.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </main>
+
+    <main class="main2">
+        <div class="overview">
+            <div class="box1">
+                <div class="img-container">
+                    <img src="images/img1.jpg" width="100%" height="300">
+                </div>
+                <p class="p1">Reimagine Coverage</p>
+                <p class="p2">Parallel Wireless OpenRAN supports indoor or outdoor deployment scenarios at the lowest
+                    TCO and can be deployed on an accelerated timeline to help mobile operators deliver coverage
+                    everywhere from rural to suburban to most dense urban.</p>
+                <a href="#" class="p3">Learn More ></a>
+            </div>
+
+            <div class="box1">
+                <div class="img-container">
+                    <img src="images/img2.jpg" width="100%" height="300">
+                </div>
+                <p class="p1">Reimagine Capacity</p>
+                <p class="p2">Easy to install, low-cost and high-performing cloud-native Parallel Wireless Open RAN
+                    supports macro, Massive MIMO or small cell deployments for densification and delivers superior end
+                    user QoS for consumers and industries in urban scenarios.</p>
+                <a href="#" class="p3">Learn More ></a>
+            </div>
+
+            <div class="box1">
+                <div class="img-container">
+                    <img src="images/img3.jpg" width="100%" height="300">
+                </div>
+                <p class="p1">Reimagine 5G and Beyond</p>
+                <p class="p2">Parallel Wireless cloud-native ORAN approach enables any 5G migration option and is
+                    software upgradable to any future 3GPP releases delivering the most cost-effective, easy to deploy,
+                    and advanced 5G capabilities for all 5G use cases.</p>
+                <a href="#" class="p3">Learn More ></a>
+            </div>
+        </div>
+
+        <section class="swiper">
+            <div class="slider">
+                <div class="slider-items">
+                    <img src="images/telefonica.png" alt="">
+                    <img src="images/MTN-logo.jpg" alt="">
+                    <img src="images/optus-logo.png" alt="">
+                    <img src="images/5g-rural-first.png" alt="">
+                    <img src="images/clientlogo-02.png" alt="">
+                    <img src="images/vodaphone-logo.png" alt="">
+                    <img src="images/vodacom.png" alt="">
+                    <img src="images/inland-cellular-logo.png" alt="">
+                    <img src="images/Optimera.png" alt="">
+                    <img src="images/zain-logo.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="sect1">
+            <div class="text">Leadership/ Culture</div>
+        <div class="row row-cols-1 row-cols-md-3 g-4 mx-3 my-3">
+            <div class="col">
+              <div class="card h-100"  id="image">
+                <img src="images/leadership.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Our Leadership</h5>
+                  <p class="card-text">The Parallel Wireless leadership team has experience building many startup companies into leading industry players.</p>
+                </div>
+                <div class=" foot">
+                  <a class="">Our Leaders ></a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 "   id="image">
+                <img src="images/icon-people.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Our People</h5>
+                  <p class="card-text">Reimaginers wanted. We have positions open across the globe. Join us.</p>
+                </div>
+                <div class=" foot">
+                  <a class="">Became a Reimaginer ></a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100" id="image">
+                <img src="images/icon-culture.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Our Culture</h5>
+                  <p class="card-text">We are a fast-moving technology company that is ambitious about innovation and collaboration, and focused on our customers’ success.</p>
+                </div>
+                <div class="foot">
+                  <a class="">Our Culture ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        
+        <div class="careers text-center bg-light p-3" style="width: 100%;">
+            <h3>Careers</h3>
+            <p class="p2">View our global openings and apply today to join the team.</p><br>
+            <button class="btn btn-danger rounded-pill">JOIN US</button>
+        </div>
+
+        <div class="about">
+            <div class="box3">
+                <h2>5G Starts Here</h2>
+                <p class="p4">Through open collaboration with OpenRAN ecosystem, we’ve created the world’s first and largest fully compliant OpenRAN portfolio that delivers the next generation of wireless infrastructure at a much lower cost, ensuring more equal access to 5G globally. Our software-defined and interoperable OpenRAN architecture was designed from the ground up to reduce complexity and drive out cost from every aspect from the RAN to the Core. We pride ourselves on offering a fully automated outdoor or indoor coverage and capacity solutions that are easy and cost-effective to deploy and maintain and are software upgradable to 5G.</p>
+                <p class="p3">LEARN MORE</p>
+            </div>
+            
+            <div class="box3">
+                <img src="images/about1.jpg" alt="">
+            </div>
+
+            <div class="box3">
+                <img src="images/about2.jpg" alt="">
+            </div>
+
+            <div class="box3">
+                <h2>Reimagine Your Network</h2>
+                <p class="p4">Parallel Wireless created the world’s only ALL G (5G/4G/3G/2G) software-enabled OpenRAN architecture to make delivery of wireless coverage or capacity use cases, especially capital intensive 5G, affordable as it enables mobile operators and industries to unleash the full value of connectivity. With unified across 5G/4G/3G/2G and Wi-Fi cloud-native architecture that is open and standardized across five key domains – RAN, Edge, Core, Orchestration and Analytics – we are committed to the 5G vision of bringing Internet to every person and organization for a truly connected world at much lower cost to deploy and maintain.</p>
+                <p class="p3">LEARN MORE</p>
+            </div>
+
+            <div class="box3">
+                <h2>Reimagine Your Economics</h2>
+                <p class="p4">The company’s end-to-end ALL G cloud-native OpenRAN portfolio is designed to help our customers modernize their networks, reduce deployment cost and complexity, increase operational efficiency, find new revenue streams and start deploying multi-vendor 5G networks today. Software innovation and openness across 5G/4G/3G /2G and Wi-Fi coupled with network automation drives TCO reduction for low-density or high density use cases of up to 60% for CAPEX and 65% for OPEX.</p>
+                <p class="p3">Hear from Our Customers</p>
+            </div>
+
+            <div class="box3">
+                <img src="images/about3.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="awards text-center bg-light">
+            <div class="box4">
+                <img src="images/pic7.png" width="100" height="100">
+                <p class="p1">Upcoming Events</p>
+                <p class="p2">Visit with us at upcoming tradeshows, conferences or attend our webinars to learn how we can help you reimagine your networks.</p>
+                <a href="#" class="p3">Connect with us at events ></a>
+            </div>
+
+            <div class="box4">
+                <img src="images/pic8.png" width="100" height="100">
+                <p class="p1">Awards</p>
+                <p class="p2">We are honored and humbled to be recognized by the industry with awards for our innovation, technology vision and deployments.</p>
+                <a href="#" class="p3">Learn More ></a>
+            </div>
+        </div>
+
+        <div class="products">
+            <div class="card">
+                <div class="img-container">
+                    <img src="images/prod1.png" width="100%" height="300">
+                </div>
+                <p class="p1">Access: OpenRAN</p>
+                <p class="p2">Our OpenRAN hardware ecosystem consists of macros, outdoor and indoor small cells, and Massive MIMOs that are all Software Defined Radios (SDRs) and can be software upgraded to 5G for ease of deployment and much lower cost.</p>
+                <button class="btn btn-danger">LEARN MORE</button>
+            </div>
+
+            <div class="card">
+                <div class="img-container">
+                    <img src="images/prod2.jpg" width="100%" height="300">
+                </div>
+                <p class="p1">Network Software</p>
+                <p class="p2">Our software platforms provide RAN and core services, orchestration, programmability, and service assurance including analytics and monitoring to deliver business agility, TCO reduction and to enable new revenue opportunities.</p>
+                <button class="btn btn-danger">LEARN MORE</button>
+            </div>
+
+            <div class="card">
+                <div class="img-container">
+                    <img src="images/prod2.jpg" width="100%" height="300">
+                </div>
+                <p class="p1">Intelligence and Automation</p>
+                <p class="p2">Network automation and intelligence software across ALL Gs for outdoor and indoor delivers TCO savings with self-configuration and self-optimization to enable optimal subscriber experience.</p><br>
+                <button class="btn btn-danger">LEARN MORE</button>
+            </div>
+        </div>
+       
+    </main>
+    
+    <div class="footer">
+        <div class="box5">
+            <img src="images/logo.png" height="130" width="200">
+            <h5>Follow Us</h5>
+            <div class="icons">
+                <i class="fa-brands fa-x-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-youtube"></i>
+            </div>  
+        </div>
+
+        <div class="box5">
+            <h3>IMPORTANT LINKS</h3><hr width="80%">
+            <div class="links">
+                <div class="link">
+                    <a href="#" class="link1">Resources</a>
+                </div>
+
+                <div class="link">
+                    <a href="#" class="link1">About Us</a>
+                </div>
+
+                <div class="link">
+                    <a href="#" class="link1">Leadership</a>
+                </div>
+
+                <div class="link">
+                    <a href="#" class="link1">Solutions</a>
+                </div>
+
+                <div class="link">
+                    <a href="#" class="link1">News</a>
+                </div>
+
+                <div class="link">
+                    <a href="#" class="link1">Technologies</a>
+                </div>
+
+                <div class="link">
+                    <a href="#" class="link1">Contact</a>
+                </div>
+
+                <div class="link">
+                    <a href="#" class="link1">Products</a>
+                </div>
+
+                <div class="link">
+                    <a href="#" class="link1">Careers</a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="box5">
+            <h3>CONTACT US</h3><hr width="80%">
+            <span><i class="fa-solid fa-headphones"></i> 1-603-589-9937</span><br>
+            <span><i class="fa-sharp fa-solid fa-location-dot"></i> 300 Innovative Way, Suite #2310<br>Nashua, NH 03062, USA</span>
+        </div>
+        <div class="box6">
+            <p class="p2">&copy 2024 Parallel Wireless. All rights reserved.</p>
+            <p class="p2">Privacy Policy | Legal | Cookies | Terms of Use | Trademarks | PO Terms & Conditions</p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
+</body>
+
+</html>

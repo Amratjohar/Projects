@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SP DIGITAL Marketing</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .containerc {
+      position: relative;
+      /* Ensure the container is positioned relative to the image */
+      width: 100%;
+      height: 700px;
+    }
+
+
+    /* Image styles */
+    .background-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      /* Ensure the image covers the container */
+    }
+
+    /* Text styles */
+    .text-container {
+      position: absolute;
+      /* Position the text container relative to the container */
+      top: 50%;
+      /* Position text container vertically at the center */
+      transform: translate(-50%, -50%);
+      /* Center the text container */
+      text-align: center;
+      /* Center align the text within the container */
+      color: #e76711;
+      /* Text color */
+      font-size: 70px;
+      /* Font size */
+      margin-left: 510px;
+    }
+
+    .highlighted-word {
+      padding: 20px;
+      text-align: left;
+      font-size: 50px;
+      margin-top: 110px;
+      color: white;
+    }
+
+    .orange-text {
+      color: #e76711;
+      /* Orange color */
+    }
+
+    .container21 {
+      margin-top: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      background-color: #f0f0f0;
+    }
+
+    .section21 {
+      margin-top: 110px;
+      width: calc(22.33% - 10px);
+      /* Adjust width as needed */
+      background-color: #f0f0f0;
+      /* Gray background color */
+      padding: 20px;
+      margin-bottom: 20px;
+      /* Add some space between sections */
+      position: relative;
+      /* Position for the line */
+    }
+
+    .section21 h2,
+    .section21 h3 {
+      color: #333;
+      /* Black heading color */
+    }
+
+    .line::after {
+      content: '';
+      border-left: 2px solid #ccc;
+      /* Gray vertical line */
+      height: 100%;
+      /* Height of the line */
+      position: absolute;
+      /* Position the line */
+      top: 0;
+      /* Align the line to the top */
+      right: 0;
+      /* Place the line at the right of the section */
+      margin-left: 100px;
+    }
+
+
+    /* Style for container4 */
+    .containerco {
+      margin-top: 1px;
+      margin-bottom: 10px;
+      background-color: white;
+      color: black;
+      width: 800%;
+      margin-right: 50px;
+      padding: 10px 30px;
+      align-items: center;
+      box-shadow: 0 2px 4px rgba(0.5, 0, 0.5, 0.7);
+      /* Optional: Add shadow */
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: auto;
+      gap: 10px;
+    }
+
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+    }
+
+    .col {
+      flex: 1;
+      margin-right: 20px;
+      /* Adjust spacing between columns */
+    }
+
+    label {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    select {
+      width: 100%;
+      padding: 8px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      margin-bottom: 10px;
+    }
+
+    input[type="radio"] {
+      width: 50%;
+      padding: 8px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      margin-bottom: 10px;
+    }
+
+    .radio-row {
+      display: flex;
+      /* Set the container to flex */
+      flex-direction: row;
+      /* Arrange the children in a row */
+      align-items: center;
+      /* Align the items vertically in the center */
+    }
+
+    .radio-row input[type="radio"],
+    .radio-row label {
+      margin-right: 10px;
+      /* Adjust spacing between radio buttons and labels */
+    }
+
+    ul a {
+      text-decoration: none;
+    }
+
+    fieldset {
+      border: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    legend {
+      font-weight: bold;
+    }
+
+    .col {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 10px;
+      /* Add some bottom margin for spacing */
+    }
+
+    label {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .radio-row1 {}
+
+    .radio-row1 input[type="radio"] {
+      margin-right: 0px;
+      /* Adjust spacing between radio buttons */
+    }
+
+    .radio-row1 label {
+      margin-right: 1px;
+      /* Adjust spacing between radio buttons and labels */
+    }
+
+    .col {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 10px;
+      /* Add some bottom margin for spacing */
+    }
+
+    label {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .radio-row2 {
+      margin-left: 0px;
+      display: flex;
+    }
+
+    .col {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 10px;
+      /* Add some bottom margin for spacing */
+    }
+
+    label {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .employee-row {
+      display: flex;
+      align-items: center;
+      /* Align input and image vertically */
+    }
+
+    input[type="date"] {
+      padding: 8px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      width: 70%;
+      /* Adjust width as needed */
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="navbar-left">
+      <span class="cursive-d">d</span>
+      <span class="dot">.</span>
+      <div class="one">
+        <span class="text1"
+          style="display: flex; Flex-direction:end;margin-left: 135px; font-size:15px;margin-bottom:5px;">01</span>
+        <span class="text">Digital Marketing</span>
+        <div class="dropdown-content" style="font-size: 10px;">
+          <a href="#">Search Engine Optimization (SEO)</a>
+          <a href="#">Social Media Marketing (SMM)</a>
+          <a href="#">Marketing</a>
+        </div>
+
+      </div>
+      <div class="two">
+        <span class="text1"
+          style="display: flex; Flex-direction:end;margin-left: 139px; font-size:15px;margin-bottom:5px;">02</span>
+        <span class="text">Digital Advertising</span>
+        <div class="dropdown-content">
+          <a href="#">Social Media Advertising</a>
+          <a href="#">Google Ads</a>
+          <a href="#">Quantity Advertising</a>
+          <a href="#">Digital Branding</a>
+        </div>
+      </div>
+      <div class="three">
+        <span class="text1"
+          style="display: flex; Flex-direction:end;margin-left: 122px; font-size:15px;margin-bottom:5px;">03</span>
+        <span class="text">Digital Branding</span>
+      </div>
+      <div class="four">
+        <span class="text1"
+          style="display: flex; Flex-direction:end;margin-left: 119px; font-size:15px;margin-bottom:5px;">04</span>
+        <span class="text">Creative Design</span>
+        <div class="dropdown-content">
+          <a href="#">Graphic Design</a>
+          <a href="#">Logo Design</a>
+        </div>
+      </div>
+      <div class="five">
+        <span class="text1"
+          style="display: flex; Flex-direction:end;margin-left: 71px; font-size:15px;margin-bottom:5px;">05</span>
+        <span class="text">WordPress</span>
+      </div>
+      <div class="six">
+        <span class="text1"
+          style="display: flex; Flex-direction:end;margin-left: 30px; font-size:15px;margin-bottom:5px;">06</span>
+        <span class="text">Blogs</span>
+      </div>
+
+      <div class="seven">
+        <span class="text1"
+          style="display: flex; Flex-direction:end;margin-left: 65px; font-size:15px;margin-bottom:5px;">07</span>
+        <span class="text">About Us</span>
+        <div class="dropdown-content">
+          <a href="#">Career</a>
+          <a href="#">Clients</a>
+          <a href="#">Press Release</a>
+        </div>
+      </div>
+      <div class="eight">
+        <span class="text1"
+          style="display: flex; Flex-direction:end;margin-left: 75px; font-size:15px;margin-bottom:5px;">08</span>
+        <span class="text">Contact Us</span>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="sidebar">
+    <div class="scroll-to-top" onclick="window.scrollTo(0, 0)">
+      Scroll to Top
+    </div>
+
+
+    <button class="b1" type="submit" style="width: 50px; height: 50px;background-color: transparent;"><i
+        class="fa fa-search"></i></button>
+  </div>
+  <div class="follow-us">
+
+    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+    <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+
+    <h1>FollowUs - </h1>
+  </div>
+
+  <div class="containerc">
+    <img src="contact.jfif" alt="" class="background-image" style="width: 100%; height: 700px;margin-top :110px;">
+    <div class="text-container">
+      <div class="highlighted-word" style="width: 100%;">
+        <b>
+          <p style="margin-left:100px; font-size: 90px;margin-top:200px;margin-bottom:20px;">We are not <span
+              id="highlightedWord" class="orange-text"> the best</span> which motivates us to be.</p>
+          <p style="margin-left:100px; font-size: 25px; color:blanchedalmond;margin-top:20px;">Help us be number 1, and
+            we will make you number 1.</p>
+          <a href="#" style="margin-left:90px; text-decoration: none;">E-mail Us <i class="fa-regular fa-envelope-open"
+              style=" font-size: 30px; color:blanchedalmond;margin-top:20px;"></i></a>
+        </b>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="container21">
+    <div class="section21" style=" margin-left: 150px; width: 300px;">
+      <b>
+        <h2 style="font-size: 30px;">Get In Touch</h2>
+
+        <p style="font-size: 25px;">Work Inquiries: <br><br>+91 98981 85798</p>
+      </b>
+
+      <p style="font-size: 25px;">Assistance Hours: <br>Monday – Friday, <br>9:30 am to 7:00 pm</p>
+      <div class="line"></div> <!-- Vertical line -->
+    </div>
+
+    <div class="section21">
+      <p style="font-size: 25px;"><b style="font-size: 30px; ">Office Address:</b><br><br> 611, Shivalik Shilp, Iskcon
+        Cross Rd, Sarkhej-Gandhinagar Highway, Ahmedabad, Gujarat, 380015</p>
+
+      <div class="line"></div> <!-- Vertical line -->
+    </div>
+
+
+    <div class="section21" style=" margin-right: 100px;">
+      <h2>Social Media</h2>
+      <ul style="display: flex;">
+        <a href="#" class="social-icon" style="background-color: #ccc;color:black"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#" class="social-icon" style="background-color: #ccc;color:black"><i class="fa-brands fa-square-instagram"></i></a><br>
+        <a href="#" class="social-icon" style="background-color: #ccc;color:black"><i class="fa-brands fa-twitter"></i></a><br>
+        <a href="#" class="social-icon" style="background-color: #ccc;color:black"><i class="fa-brands fa-linkedin"></i></a><br>
+        <a href="#" class="social-icon" style="background-color: #ccc;color:black"><i class="fa-brands fa-whatsapp"></i></a>
+      </ul>
+    </div>
+  </div>
+
+  <div class="containerco" style="width: 96%;">
+    <div class="row" style=" margin-left: 100px; margin-right: 100px;">
+      <div class="col">
+        <label for="employee-status">Yours Name: </label>
+        <div class="employee-row">
+          <input type="text" style="width: 300px;height: 25px;">
+        </div>
+      </div>
+      <div class="col">
+
+        <label for="employee-status"> Your E-mail : </label>
+        <div class="employee-row">
+          <input type="text" style="width: 300px;height: 25px;">
+        </div>
+      </div>
+      <div class="col">
+        <label for="employee-status"> Company Name: </label>
+        <div class="employee-row">
+          <input type="text" style="width: 300px;height: 25px;">
+        </div>
+      </div>
+    </div>
+    <div class="row" style=" margin-left: 100px; margin-right: 100px;">
+      <div class="col">
+        <label for="employee-status"> Your Number : </label>
+        <div class="employee-row">
+          <input type="text" style="width: 300px;height: 25px;">
+        </div>
+      </div>
+
+      <div class="col">
+        <label for="employee-status"> Subject (Optional): </label>
+        <div class="employee-row">
+          <input type="text" style="width: 300px;height: 25px;">
+        </div>
+      </div>
+
+
+      <div class="col">
+        <label for="employee-status">Your Address : </label>
+        <div class="employee-row">
+          <input type="text" style="width: 300px;height: 25px;">
+        </div>
+      </div>
+
+      <div class="row" style=" margin-right: 100px;">
+        <div class="col">
+          <label for="employee-status">Message : </label>
+          <div class="employee-row">
+            <textarea id="message" name="message" rows="4" cols="154"></textarea><br>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <div class="message-logo">
+    <i class="fa fa-hand-paper-o hand-icon"> Hey Here.</i>
+    <img src="msg.jfif" alt="">
+  </div>
+
+
+  <div class="container7">
+    <div class="section7" style="margin-left: 100px;">
+      <h2>
+        <span
+          style="color: hwb(21 0% 0%); font-family: Brush Script MT, Brush Script Std, cursive; font-size: 175px;">d</span>
+        <span style="color: black;font-size: 175px;">.</span>
+      </h2>
+
+
+      <p style="margin: bottom 50px;">E-mail Us <br><br> info@digipple (Work) <br><br>hr@digipple.com <br><br>Socialize
+        with us</p>
+      <a href="#" class="social-icon"><i class="fa-brands fa-facebook"></i></a>
+      <a href="#" class="social-icon"><i class="fa-brands fa-square-instagram"></i></a>
+      <a href="#" class="social-icon"><i class="fa-brands fa-twitter"></i></a>
+      <a href="#" class="social-icon"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="#" class="social-icon"><i class="fa-brands fa-whatsapp"></i></a>
+    </div>
+
+    <div class="section7">
+      <h2>Head Office</h2>
+      <p>611, Shivalik Shilp, Iskcon Cross Rd,<br><br>Sarkhej-Gandhinagar Highway,<br><br>Ahmedabad India,
+        380015<br><br><b>Inquiries</b><br><br>+91 98981 85798 (Work)</p>
+
+    </div>
+
+
+    <div class="section7">
+      <h2>Search</h2>
+      <form class="example" action="/action_page.php" style="margin:auto;max-width:300px">
+        <input type="text" placeholder="Search.." name="search2">
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+      <p><b style="font-size: 30px;">Important Links</b>
+        <br>
+
+        <br class="sentence-gap">◦ Book an Introductory Call with Digipple
+        <br><br class="sentence-gap">◦ Business Development Executive Job Application
+        <br><br class="sentence-gap">◦ Digital Marketing
+        <br><br class="sentence-gap">◦ Digital Branding
+        <br><br class="sentence-gap">◦ Digital Advertising
+        <br> <br class="sentence-gap">◦ Creative Graphic Design
+        <br><br class="sentence-gap">◦ WordPress Development
+      </p>
+    </div>
+    <div class="section7">
+      <h2>Stay in touch</h2>
+      <style>
+        .square-container {
+          border: 1px solid black;
+          /* border color and width */
+          border-radius: 5px;
+          /* rounded corners */
+          padding: 10px;
+          /* spacing inside the container */
+          width: fit-content;
+          /* adjust width to fit content */
+          background-color: hsl(0, 9%, 91%);
+          color: black;
+          width: 200px;
+        }
+      </style>
+
+      <div class="square-container">
+        Your email address
+      </div>
+
+      <p><b style="margin-left: 130px;"> Subscribe </b>
+        <br><br><b style="font-size: 30px;">Work Links</b><br><br>◦ Our Portfolio<br><br>◦ Career
+      </p>
+    </div>
+
+    <footer>
+      <hr style="margin-left: 100px;margin-right: 100px;width: 1250px;">
+      <p style="margin-top: 50px;">© 2024, DIGIPPLE DIGITAL SOLUTIONS PRIVATE LIMITED. Made with passion by Digipple in
+        India.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;All rights &
+        wrongs reserved.</p>
+    </footer>
+
+  </div>
+
+  <script>
+    // Array of words to cycle through
+    var words = ['Number 1', 'the best'];
+
+    // Function to change the highlighted word
+    function changeHighlightedWord() {
+      // Get the current highlighted word
+      var currentWord = document.getElementById('highlightedWord').textContent;
+      // Find the index of the current word in the array
+      var currentIndex = words.indexOf(currentWord);
+      // Calculate the index of the next word
+      var nextIndex = (currentIndex + 1) % words.length;
+      // Get the next word from the array
+      var nextWord = words[nextIndex];
+      // Update the text content of the span element with the new word
+      document.getElementById('highlightedWord').textContent = nextWord;
+    }
+
+    // Example: Change the highlighted word every 3 seconds
+    setInterval(changeHighlightedWord, 1000);
+  </script>
+</body>
+
+</html>

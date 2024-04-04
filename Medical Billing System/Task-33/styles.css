@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("bg.jpeg");
+    background-size: contain; 
+}
+
+header {
+    background-color: aquamarine;
+    color: #fff;
+    padding: 10px 0;
+}
+
+header img{
+    height: 8vh;
+    margin-left: 2rem;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    max-width: 898px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: cadetblue;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-top: 0;
+    color: darkred;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.form-section {
+    margin-bottom: 30px;
+    width: 867px;
+}
+
+.form-section h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: darkred;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.form-section form .form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.form-section form .form-group {
+    width: 48%; /* Adjust width to fit two fields side by side */
+}
+
+.form-section form .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: darkred;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.form-section form .form-group input[type="text"],
+.form-section form .form-group input[type="date"],
+.form-section form .form-group input[type="number"],
+.form-section form .form-group input[type="tel"],
+.form-section form .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-section form button {
+    padding: 10px 20px;
+    background-color: blueviolet;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+   margin: 10px auto;
+   display: flex;
+
+}
+
+.form-section form button:hover {
+    color:aquamarine ;
+    text-transform: uppercase;
+    box-shadow: 10px 10px 40px cornflowerblue;
+    background-color: #0056b3;
+}
+
+
+.bill {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: darkcyan;
+    border-radius: 5px;
+}
+
+.bill p {
+    margin: 5px 0;
+}
+
+.bill button {
+    padding: 5px 10px;
+    background-color: brown;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.bill button:hover {
+    background-color: #c82333;
+}

@@ -1,0 +1,314 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 999;
+  height: 100px;
+}
+
+.logo {
+  width: 200px;
+  height: 60px;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li {
+  color: black;
+  text-decoration: none;
+  transition: all ease 0.3s;
+}
+
+nav ul li:hover {
+  /* color: orangered; */
+  text-decoration: dashed;
+  border-bottom: 2px solid orange;
+}
+
+nav ul li a button {
+  color: red;
+  font-weight: 700;
+  background-color: white;
+  transition: all ease-in-out 0.3s;
+  padding: 8px 16px;
+  border: 1px solid red;
+}
+
+nav ul li a button:hover {
+  color: white;
+  background-color: red;
+  border-color: transparent;
+}
+
+/* Dropdown Styles */
+
+.dropdown-menu {
+  /* padding-top: 40px transparent; */
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 200px;
+  min-width: 160px;
+  background-color: white;
+  border: 1px solid #ccc;
+  z-index: 10;
+  transition: all ease-in-out 0.3s;
+}
+
+.dropdown-menu li {
+  display: block;
+  padding: 8px 16px;
+  color: black;
+  text-decoration: none;
+  transition: all ease-in-out 0.3s;
+}
+
+.dropdown-menu li:hover {
+  /* background-color: white; */
+  border-bottom: 0px solid transparent;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+/* 
+    .active {
+      color: orangered; 
+     text-decoration: dashed;
+      border-bottom: 2px solid orange;
+    } */
+
+/* sub-dropdown */
+
+.sub-dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 0%;
+  left: 90%;
+  width: 200px;
+  min-width: 160px;
+  background-color: white;
+  border: 1px solid #ccc;
+  z-index: 10;
+  transition: all ease-in-out 0.3s;
+}
+.sub-dropdown-menu li {
+  display: block;
+  padding: 8px 16px;
+  color: black;
+  text-decoration: none;
+  transition: all ease-in-out 0.3s;
+}
+.sub-dropdown-menu li:hover {
+  border-bottom: 0px solid transparent;
+}
+.sub-dropdown:hover .sub-dropdown-menu {
+  display: block;
+}
+
+/*Mega menu  */
+.product-drop {
+  background-color: white;
+}
+
+.product-drop-img {
+  background-image: url("https://www.parallelwireless.com/wp-content/uploads/megamenu-1.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.product-drop-img a i {
+  font-weight: 900;
+}
+
+.drop-list li {
+  color: black;
+  font-weight: 400;
+}
+
+.drop-list li:hover {
+  color: orange;
+}
+
+.dropdown-mega-menu {
+  /* padding-top: 40px transparent; */
+  display: none;
+  position: absolute;
+  top: 150%;
+  left: -375%;
+  width: 94.5em;
+  min-width: 160px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  z-index: 10;
+  transition: all ease-in-out 0.3s;
+}
+
+.dropdown-mega-menu li {
+  display: block;
+  padding: 8px 16px;
+  color: black;
+  text-decoration: none;
+  transition: all ease-in-out 0.3s;
+}
+
+.dropdown-mega-menu li:hover {
+  /* background-color: white; */
+  border-bottom: 0px solid transparent;
+}
+
+.dropdown-mega:hover .dropdown-mega-menu {
+  display: block;
+}
+/* 
+    .active {
+      color: orangered;
+      text-decoration: dashed;
+      border-bottom: 2px solid orange;
+    } */
+
+.sub-drop-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 200px;
+  min-width: 160px;
+  background-color: #f0f0f0;
+  /* border: 1px solid #ccc; */
+  font-weight: 400;
+  z-index: 10;
+
+  transition: all ease-in-out 0.3s;
+}
+
+.sub-drop-menu li {
+  display: block;
+  padding: 8px 16px;
+  color: black;
+  text-decoration: none;
+  transition: all ease-in-out 0.3s;
+}
+
+.sub-drop-menu li:hover {
+  /* background-color: white; */
+  border-bottom: 0px solid transparent;
+}
+
+.sub-drop:hover .sub-drop-menu {
+  display: block;
+}
+
+.hero {
+  padding-top: 34%;
+  /* margin-top: 50px; */
+  /* padding-bottom: 100%; */
+  /* margin-top: 24em; */
+  background-image: url("https://www.parallelwirel ess.com/wp-content/uploads/hero-resources.jpg");
+  background-size: cover;
+  background-position: center top 100px;
+  background-attachment: scroll;
+  background-size: 100% 500px;
+  background-repeat: no-repeat;
+  z-index: 0;
+  /* Fixed background */
+}
+
+.solution-content {
+  background-color: #f0f0f0;
+  opacity: 0.6;
+}
+
+.contact {
+  font-weight: 800;
+  display: flex;
+}
+
+.contact-container {
+  display: flex;
+  font-size: 20px;
+}
+
+.contact-container a {
+  font-weight: 900;
+  color: #ff5100;
+}
+
+.enquire {
+  font-size: 20px;
+}
+
+.enquire a {
+  font-weight: 900;
+  color: #ff5100;
+}
+
+.footer {
+  padding: 4%;
+  background-image: url(images/logo-carousel.jpg);
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.box6 {
+  margin-top: 30px;
+  display: grid;
+  grid-column: 1 / 4;
+}
+
+.links {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2%;
+}
+
+.link1 {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
+.link1:hover {
+  color: #ff5100;
+}
+
+.icons {
+  color: #ff5100;
+}
+
+.slider1 {
+  padding: 2%;
+  background-color: lightgray;
+}
+
+.img-list {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  font-size: 0;
+  overflow-x: auto;
+  scrollbar-width: none;
+  gap: 4%;
+}
+
+.img-item {
+  width: 250px;
+  height: 150px;
+}

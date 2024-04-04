@@ -1,0 +1,513 @@
+/* Legal Page */
+/* Resources Page */
+body {
+  font-family: "Fira Sans Condensed", sans-serif;
+  margin: 0;
+  color: #3b3936;
+}
+
+nav {
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 999;
+  height: 100px;
+}
+
+.logo {
+  width: 200px;
+  height: 60px;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li {
+  color: black;
+  text-decoration: none;
+  transition: all ease 0.3s;
+}
+
+nav ul li:hover {
+  /* color: orangered; */
+  text-decoration: dashed;
+  border-bottom: 2px solid orange;
+}
+
+nav ul li a button {
+  color: red;
+  font-weight: 700;
+  background-color: white;
+  transition: all ease-in-out 0.3s;
+  padding: 8px 16px;
+  border: 1px solid red;
+}
+
+nav ul li a button:hover {
+  color: white;
+  background-color: red;
+  border-color: transparent;
+}
+
+/* Dropdown Styles */
+
+.dropdown-menu {
+  /* padding-top: 40px transparent; */
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 200px;
+  min-width: 160px;
+  background-color: white;
+  border: 1px solid #ccc;
+  z-index: 10;
+  transition: all 0.5s;
+}
+
+.dropdown-menu li {
+  display: block;
+  padding: 8px 16px;
+  color: black;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+.dropdown-menu li:hover {
+  /* background-color: white; */
+  border-bottom: 0px solid transparent;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* 
+        .active {
+          color: orangered; 
+         text-decoration: dashed;
+          border-bottom: 2px solid orange;
+        } */
+
+/* sub-dropdown */
+
+.sub-dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 0%;
+  left: 90%;
+  width: 200px;
+  min-width: 160px;
+  background-color: white;
+  border: 1px solid #ccc;
+  z-index: 10;
+  transition: all 0.5s;
+}
+
+.sub-dropdown-menu li {
+  display: block;
+  padding: 8px 16px;
+  color: black;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+.sub-dropdown-menu li:hover {
+  border-bottom: 0px solid transparent;
+}
+
+.sub-dropdown:hover .sub-dropdown-menu {
+  display: block;
+}
+
+/*Mega menu  */
+.product-drop {
+  background-color: white;
+}
+
+.product-drop-img {
+  background-image: url("https://www.parallelwireless.com/wp-content/uploads/megamenu-1.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.product-drop-img a i {
+  font-weight: 900;
+}
+
+.drop-list li {
+  color: black;
+  font-weight: 400;
+}
+
+.drop-list li:hover {
+  color: orange;
+}
+
+.dropdown-mega-menu {
+  /* padding-top: 40px transparent; */
+  display: none;
+  position: absolute;
+  top: 150%;
+  left: -375%;
+  width: 94.5em;
+  min-width: 160px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  z-index: 10;
+  transition: all ease 0.3s;
+}
+
+.dropdown-mega-menu li {
+  display: block;
+  padding: 8px 16px;
+  color: black;
+  text-decoration: none;
+  transition: all ease-in-out 0.3s;
+}
+
+.dropdown-mega-menu li:hover {
+  /* background-color: white; */
+  border-bottom: 0px solid transparent;
+}
+
+.dropdown-mega:hover .dropdown-mega-menu {
+  display: block;
+}
+
+/* 
+        .active {
+          color: orangered;
+          text-decoration: dashed;
+          border-bottom: 2px solid orange;
+        } */
+
+.sub-drop-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 200px;
+  min-width: 160px;
+  background-color: #f0f0f0;
+  /* border: 1px solid #ccc; */
+  font-weight: 400;
+  z-index: 10;
+  transition: all ease-in-out 0.3s;
+}
+
+.sub-drop-menu li {
+  display: block;
+  padding: 8px 16px;
+  color: black;
+  text-decoration: none;
+  transition: all ease-in-out 0.3s;
+}
+
+.sub-drop-menu li:hover {
+  /* background-color: white; */
+  border-bottom: 0px solid transparent;
+}
+
+.sub-drop:hover .sub-drop-menu {
+  display: block;
+}
+/* NAV END */
+
+.head{
+    margin-top: 6rem;
+}
+.text{
+    width: 100%;
+    padding: 2rem;
+    font-size: 40px;
+    text-align: center;
+    background-color: #ccc;
+}
+
+.head2{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
+    margin-top: 3rem;
+    /* background-color: aquamarine; */
+    /* margin: 3rem 2rem 0rem 2rem; */
+}
+
+.text1{
+    text-align: end;
+    /* padding: 4rem; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 25px;
+    margin: 0 5rem;
+}
+
+.text2{
+    text-align: end;
+    /* padding: 4rem; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 25px;
+    /* margin: 0 5rem; */
+}
+
+.text2 img{
+    width: 90%;
+    margin-right: 5rem;
+}
+
+.txtbold{
+    /* margin-left: 5rem; */
+    text-align: justify;
+    font-weight: bold;
+}
+
+.txtlight{
+    text-align: justify;
+    /* margin-left: 5rem; */
+}
+
+.text3 img{
+    margin-left: 4.8rem;
+    width: 90%;
+}
+.explore{
+    margin: 2rem;
+    display: flex;
+    justify-content:center ;
+    /* flex-direction: column; */
+}
+.btn1{
+    background-color: #ff5100;
+    border: 1px solid black;
+    padding: 8px 30px;
+    font-weight: 600;
+    color: white;
+   border-radius: 15px;
+}
+
+.btn1:hover{
+    background-color: white;
+    border: 1px solid black;
+    transition: all .4s ease-in-out;
+    color: black;
+}
+
+.line{
+    border: 2px solid #ff5100;
+    height: 3px;
+    margin: 1rem;
+}
+
+.head3{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: repeat(2,1fr);
+    /* grid-template-rows: repeat(3,1fr); */
+    margin-top: 3rem;
+    /* background-color: aquamarine; */
+    /* margin: 3rem 2rem 0rem 2rem; */
+}
+
+.text4{
+    text-align: end;
+    /* padding: 4rem; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 22px;
+    margin: 0 5rem;
+}
+
+.txtbold1 {
+    /* margin-left: 5rem; */
+    text-align: justify;
+    /* font-weight: bold; */
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.join1:hover{
+    text-decoration: underline;
+}
+
+.carousel {
+    max-width: 800px;
+    margin: 50px auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.slide {
+    width: 100%;
+    height: 500px;
+    display: none;
+}
+
+.slide:first-child {
+    display: block;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px 20px;
+    border: none;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+/* FOOTER */
+.footer {
+  padding: 4%;
+  background-image: url(images/logo-carousel.jpg);
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.box6 {
+  margin-top: 30px;
+  display: grid;
+  grid-column: 1 / 4;
+}
+
+.links {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2%;
+}
+
+.link1 {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
+.link1:hover {
+  color: #ff5100;
+}
+
+.icons {
+  color: #ff5100;
+}
+
+.slider1 {
+  padding: 2%;
+  background-color: lightgray;
+}
+
+.img-list {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  font-size: 0;
+  overflow-x: auto;
+  scrollbar-width: none;
+  gap: 4%;
+}
+
+.img-item {
+  width: 250px;
+  height: 150px;
+}
+
+/* Legal Page */
+
+.hero1 {
+  padding-top: 34%;
+  /* margin-top: 50px; */
+  /* padding-bottom: 100%; */
+  /* margin-top: 24em; */
+  background-image: url("https://www.parallelwireless.com/wp-content/uploads/vRAN-hero.jpg");
+  background-size: cover;
+  background-position: center top 100px;
+  background-attachment: scroll;
+  background-size: 100% 500px;
+  background-repeat: no-repeat;
+  z-index: 0;
+  /* Fixed background */
+}
+
+.solution-content1 {
+  background-color: #f0f0f0;
+  opacity: 0.6;
+}
+
+
+/* Resources Page */
+.hero {
+    padding-top: 34%;
+    /* margin-top: 50px; */
+    /* padding-bottom: 100%; */
+    /* margin-top: 24em; */
+    background-image: url('https://www.parallelwireless.com/wp-content/uploads/products-hero-1600x500.jpg');
+    background-size: cover;
+    background-position: center top 100px;
+    /* background-attachment: fixed; */
+    background-size: 100% 500px;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+
+.solution-content {
+    background-color: #f0f0f0;
+    opacity: 0.6;
+}
+
+.hero-nav {
+    background-color: #EFEFEF;
+}
+
+.active-hero {
+    background-color: orangered !important;
+    color: white !important;
+}
+
+.resource-content a {
+    text-decoration: none;
+    font: bold;
+    color: orangered;
+    transition: all ease-in 0.3s;
+}
+
+.resource-content a:hover {
+    text-decoration: underline;
+}
