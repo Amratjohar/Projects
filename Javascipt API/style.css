@@ -4,6 +4,10 @@
   font-family: sans-serif;
 }
 
+.main{
+  display: flex;
+}
+
 h1 {
   text-align: center;
   padding: 40px 0;
@@ -37,7 +41,7 @@ h1 {
   padding: 20px;
 }
 
-h2{
+h2 {
   margin-bottom: 2rem;
 }
 label {
@@ -50,4 +54,40 @@ span {
 .product-card img {
   width: 100%;
   height: 280px;
+}
+
+.search-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.search-wrapper label{
+  font-size: 15px;
+  font-weight: 600;
+}
+.search-wrapper input {
+  width: 50%;
+  height: 30px;
+  margin-bottom: 1rem;
+}
+
+.cart{
+  font-size: 25px;
+  text-decoration: none;
+}
+
+#btn{
+  width: 100%;
+  padding: 10px;
+  border-radius: 25px;
+  background: blue;
+  font-size: 15px;
+  font-weight: 600;
+  color: white;
+}
+
+#btn:hover{
+  background: lightcyan;
+  color: red;
+  cursor: pointer;
 }
