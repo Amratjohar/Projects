@@ -1,0 +1,19 @@
+.FooterSection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #232d37;
+    flex-wrap: wrap;
+    color: white;
+}
+
+.FooterSection span{
+    font-size: 18px;
+}
+
+
+@media (max-width: 500px) {
+    .FooterSection {
+        justify-content: center;
+    }
+}

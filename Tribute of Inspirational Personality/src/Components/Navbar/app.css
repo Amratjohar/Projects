@@ -1,0 +1,66 @@
+.navbarLis {
+  justify-content: right;
+  font-size: 18px;
+  font-weight: light;
+}
+
+.navbarLis a {
+  color: #e6e6e6 !important;
+  transition: all .2s linear;
+}
+
+.navbarLis a:hover {
+  color: aqua !important;
+  background: blueviolet;
+  border-radius: 30px;
+  transition: all .3s ease;
+}
+
+.navbar {
+  background-color: #232d37 !important;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+.logoOfNavbar {
+  color: #ffffff;
+  font-size: 27px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.BtnOfToogleNavbar {
+  display: none !important;
+  width: 50px;
+  height: 50px;
+  border: 1px solid white;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 25px;
+}
+
+.BtnOfToogleNavbar:active {
+  border: 2px solid white;
+  font-size: 26px;
+}
+
+@media (max-width: 991px) {
+  .BtnOfToogleNavbar {
+    display: flex !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .navbar {
+    padding: 10px 0;
+  }
+
+  .logoOfNavbar {
+    font-size: 18px;
+  }
+}

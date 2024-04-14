@@ -1,0 +1,78 @@
+.AboutSection {
+  color: white;
+  width: 90vw;
+  margin: 0 auto !important;
+  padding: 1rem;
+}
+
+.tribute {
+  /* background-color: #fff; */
+  padding: 3rem;
+  /* padding: 50px 50px; */
+  text-align: center;
+}
+
+.btn-read-more {
+  border: 1px solid #333b46;
+  border-radius: 20px;
+  color: white;
+  padding-left: 25px;
+  padding-right: 25px;
+  transition: all .3s ease;
+}
+
+.btn-read-more:hover,
+.btn-read-more:focus {
+  border: 2px solid black;
+  color: black;
+  font-weight: 800;
+  background-color: aquamarine;
+}
+
+.AboutSection h2 {
+  font-family: "DM Serif Text";
+  font-weight: normal;
+  font-size: 50px;
+}
+
+.spanOfAbout {
+  margin-left: 150px;
+  font-family: "Jacques Francois";
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+.row1{
+    display: flex;
+    justify-content: center;
+}
+
+.subLineOfSubAbout {
+  display: flex;
+  font-size: 18px;
+  margin: 5px 50px;
+  font-family: "Jacques Francois";
+}
+
+.FirstSubLineOfSA {
+  font-weight: bolder;
+  font-size: 19px;
+  flex: 1;
+}
+
+.SecondSubLineOfSA {
+  flex: 5;
+}
+
+@media (max-width: 670px) {
+  .subLineOfSubAbout {
+    margin: 0;
+  }
+
+  .subLineOfSubAbout {
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin: 15px 0;
+  }
+}
