@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+    background-color: aqua;
+}
+
+.container{
+    margin: 2rem auto;
+    background-color: aquamarine;
+}
+
+.head{
+    text-align: center;
+    font-weight: 800;
+    font-size: 2rem;
+    color: blueviolet;
+}
+
+.row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.add{
+    display: flex;
+    justify-content: center;
+}
+
+.btn{
+    display: flex;
+    margin-left: 1rem;
+}
