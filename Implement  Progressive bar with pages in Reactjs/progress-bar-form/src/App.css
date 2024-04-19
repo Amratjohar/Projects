@@ -1,0 +1,265 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: aquamarine;
+}
+
+h1 {
+  text-align: center;
+}
+
+.btn-shine {
+  /* transform: translate(-50%, -50%); */
+  padding: 12px 0px;
+  color: #ffffff;
+  background: linear-gradient(to right, #4d4d4d 0, white 40%, #4d4d4d 60%);
+  background-position: 0;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 2s infinite alternate-reverse;
+  animation-fill-mode: forwards;
+  -webkit-text-size-adjust: none;
+  font-weight: 700;
+  font-size: 2rem;
+  text-decoration: none;
+  white-space: nowrap;
+}
+@keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 180px;
+  }
+  100% {
+    background-position: 180px;
+  }
+}
+
+.app-container {
+  max-width: 600px;
+  margin: 1rem auto;
+  padding: 20px;
+}
+
+.form-container {
+  border: 10px double cadetblue;
+  border-radius: 70px;
+  padding: 30px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  font-weight: 700;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+input {
+  height: 30px;
+  width: 70%;
+  border-radius: 25px;
+  text-align: center;
+  margin: 5px;
+}
+
+input[type="radio"],
+input[type="file"] {
+  border-radius: 0;
+  text-align: center;
+  height: auto;
+  width: auto;
+  margin-left: 1rem;
+}
+/* 
+.progress-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  margin-bottom: 20px;
+}
+
+.progress-names {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5px 10px;
+}
+
+.step-name {
+  font-size: 12px;
+  border: 2px double black;
+  padding: 1rem;
+  border-radius: 30px;
+  font-weight: 800;
+  background: cadetblue;
+}
+
+.progress-line-container {
+  width: 100%;
+  height: 6px;
+  background-color: lightskyblue;
+}
+
+.progress-line {
+  height: 100%;
+  background-color: #007;
+  border-radius: 2px;
+  transition: all 0.7s;
+} */
+
+.progress-bar {
+  display: flex;
+  flex-direction: column;
+}
+
+.progress-line-container {
+  display: flex;
+  position: relative;
+}
+
+.progress-names {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.progress-number {
+  position: relative;
+  top: -13px;
+  left: 0;
+  width: 45px;
+  height: 30px;
+  background-color: #ccc;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: #fff;
+  z-index: 2; /* Ensure numbers appear above the progress line */
+}
+
+.progress-number.active {
+  background-color: #007bff; /* Active number color */
+}
+
+.progress-line {
+  height: 4px;
+  background-color: #ccc;
+  position: relative;
+}
+
+.progress-line.completed {
+  background-color: #007bff; /* Completed line color */
+}
+
+.step-name {
+  flex: 0;
+  text-align: center;
+  color: #333;
+}
+
+.icon {
+  padding: 10px;
+  color: black;
+  z-index: 999;
+  background: green;
+  width: 2em;
+  height: 2.2em;
+  position: relative;
+  top: -19px;
+  border-radius: 50%;
+  font-size: 20px;
+}
+
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+/* ---------------button ---------------------*/
+button {
+  --border-radius: 15px;
+  --border-width: 4px;
+  appearance: none;
+  position: relative;
+  padding: 1em 2em;
+  border: 0;
+  background-color: #212121;
+  font-family: "Roboto", Arial, "Segoe UI", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  z-index: 2;
+  border-radius: 15px;
+  margin-top: 10px;
+  margin-left: 15px;
+}
+
+button::after {
+  --m-i: linear-gradient(#000, #000);
+  --m-o: content-box, padding-box;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding: var(--border-width);
+  border-radius: var(--border-radius);
+  background-image: conic-gradient(
+    #488cfb,
+    #29dbbc,
+    #ddf505,
+    #ff9f0e,
+    #e440bb,
+    #655adc,
+    #488cfb
+  );
+  -webkit-mask-image: var(--m-i), var(--m-i);
+  mask-image: var(--m-i), var(--m-i);
+  -webkit-mask-origin: var(--m-o);
+  mask-origin: var(--m-o);
+  -webkit-mask-clip: var(--m-o);
+  mask-composite: exclude;
+  -webkit-mask-composite: destination-out;
+  filter: hue-rotate(0);
+  animation: rotate-hue linear 500ms infinite;
+  animation-play-state: paused;
+}
+
+button:hover::after {
+  animation-play-state: running;
+}
+
+@keyframes rotate-hue {
+  to {
+    filter: hue-rotate(1turn);
+  }
+}
+
+button,
+button::after {
+  box-sizing: border-box;
+}
+
+button:active {
+  --border-width: 5px;
+}
+/* ---------------button ---------------------*/
+
+.sect {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+}
