@@ -103,7 +103,7 @@ const App = () => {
           <p>Mobile: {formData.personalInfo.mobile}</p>
           <p>Gender: {formData.personalInfo.gender}</p>
           <p>Date of Birth: {formData.personalInfo.dob}</p>
-          {photo && <img src={photo} alt="User" />}
+          {photo && <img src={photo} alt="User" className='img1'/>}
         </div>
         <div>
           <h3>Address Details</h3>
