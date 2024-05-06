@@ -1,21 +1,7 @@
 import { useEffect } from 'react';
-import "./style.css";
+import "./circular.css";
 import Boarding from '../images/curricular/day-boarding-1.jpg';
 import "animate.css/animate.min.css";
-// import fadeInLeft from 'react-animations/lib/fade-in-left'
-
-// const Animation = () => {
-//   // useEffect to add animation on component mount
-  // useEffect(() => {
-  //   const circularleft = document.getElementsByClassName("Co-Curricular-left");
-  //   const circularright = document.getElementsByClassName("Co-Curricular-right");
-
-  //   if (circularleft && circularright) {
-  //     circularleft.classList.add("animate__animated", "animate__fadeInLeft");
-  //     circularright.classList.add("animate__animated", "animate__fadeInRight");
-  //   }
-  // }, []);
-// };
 
 function Circular(){
 
@@ -23,7 +9,7 @@ function Circular(){
     const circularleft = document.querySelector(".Co-Curricular-left");
     const circularright = document.querySelector(".Co-Curricular-right");
     const text = document.querySelector(".paraText");
-    const img = document.querySelector(".image");
+    const img = document.querySelector(".Intro-image");
 
     if (circularleft && circularright && text && img) {
       circularleft.classList.add("animate__animated", "animate__fadeInLeft");
@@ -35,11 +21,14 @@ function Circular(){
 
   return(
     <>    
+    <div className="container">
+       <img className="Intro-image animate__animated animate__fadeInDown" src="https://laureatehighschool.com/wp-content/uploads/2021/12/The-Importance-of-Co-Curricular-Activities-in-School-Laureate-High-School.jpg"></img>
+    </div>
     <container>
       <main className="wrapper bg-lightgrey co-curricular-wrapper">
        {/*<section className="branch-banner cocurricular-banner hideme load-fadein"></section>*/}
         <section className="intro-txt">
-        <img className="image animate__animated animate__fadeInDown" src="https://miro.medium.com/max/811/1*F5AXQQZOuZuGsmuDi0BNYQ.jpeg"></img>
+        
           {/* <h1>Co-Curricular</h1> */}
           <div className="container">
            
