@@ -33,7 +33,7 @@ function Circular(){
           <div className="container">
            
             <p className="paraText animate__animated animate__fadeInDown">
-              <span className="big-alpha ">A</span>t Centre Point, we cater to the
+              <span className="big-alpha ">A</span>t Super School, we cater to the
               interests, skills and multiple intelligence of our students andequip
               them with life skills, and engage them in various co-curricular
               activities. Students participate in art and craft competitions and
@@ -184,7 +184,7 @@ function Circular(){
                   <div className="whitebox">
                     <p>
                       <span className="big-alpha">S</span>ports are a necessary and
-                      important component of school upbringing-so feels CPS. Thus
+                      important component of school upbringing-so feels super. Thus
                       the emphasis on Sports is tremendous as a means of all round
                       development of body and mind.
                     </p>

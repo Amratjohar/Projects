@@ -3,13 +3,14 @@
 // import viteLogo from '/vite.svg'
 import './App.css'
 import Circular from './component/circular.jsx'
+// import Admission from './component/admission'
 
 function App() {
 
   return (
     <div className="App">
       <Circular/>
-   
+   {/* <Admission/> */}
 
   </div>
   )
